@@ -1,0 +1,178 @@
+.navbar{
+    margin-bottom: 0 !important;
+}
+
+th,td{
+    text-align: center;
+}
+
+table{
+    width:100%;
+}
+
+.dataTableGroup{
+    margin-top: 10px;
+}
+
+#predictButton:hover{
+background-color: rgb(61, 131, 236);
+border-color: white;
+transition: background-color .5s;
+}
+
+#predictButton{
+    border-color: rgb(61, 131, 236);
+    font-size: 1.5em;
+}
+
+mark{
+    background-color: rgb(61, 131, 236);
+    color:white;
+    border-radius: 5px;
+}
+
+th{
+    width:10%;
+    background-color: #292929;
+    color:white;
+}
+
+tr:hover{
+    background-color: #292929;
+    color:white;
+    transition: background-color .3s;
+    /* transition: color .25s; */
+}
+
+.customTable{
+    margin:auto;
+}
+
+.menuBar{
+    text-align: center;
+    background-color: #292929;
+    /* width: 75%; */
+    /* margin-right:auto;
+    margin-left:auto; */
+    
+}
+
+.menuBar li{
+    font-size: 1.25em;
+    font-weight: bold;
+    
+}
+
+.menuBar li a {
+    color:white;
+}
+
+.menuBar li.active a{
+    background-color: rgb(61, 131, 236) !important;
+}
+
+.menuBar li a:hover{
+    background-color: rgb(61, 131, 236) !important;
+    transition: background-color .5s
+}
+
+.tabbable #tabSet{
+    display:flex;
+    justify-content: space-around;
+}
+
+#menuBarValue .active a{
+    background-color: rgb(61, 131, 236) !important;
+}
+
+#menuBarValue li:hover{
+    background-color: rgb(61, 131, 236) !important;
+    transition: background-color .5s
+}
+
+#menuBarValue a{
+    border-radius: 5px;
+}
+
+#shownCol,#keyCol{
+    text-align: center;
+}
+
+#shownCol div{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#keyCol{
+    width: 75%;
+}
+
+#shownCol{
+    width: 75%;
+}
+
+#keyCol div{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#keyCol div .checkbox{
+    margin-top: 0;
+    margin-bottom: 0;
+    /* width:125px; */
+    /* height: 125px; */
+}
+
+#shownCol div .checkbox{
+    margin-bottom: 0;
+    margin-top: 0;
+    width:100px;
+    /* height: 50px; */
+    /* padding-top: 20px; */
+}
+
+.graphRow{
+    height: 400px;
+}
+
+.shownColGroup, .keyColGroup{
+    height:100%;
+    /* width:90%; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.textBoxGroup{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.textBoxGroup div{
+    margin:auto;
+}
+
+/* .buttonGroup{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+} */
+.textBoxGroup div{
+    width:25%;
+}
+
+.textBoxGroup div div {
+    text-align: center;
+}
+
+
+body{
+    /* background-color: #292929; */
+    /* color:white; */
+}
