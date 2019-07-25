@@ -13,7 +13,10 @@ ui = fluidPage(
                  "Graph"                                                           
              ) ,
             tabPanel(
-                 "Data Set"                                              
+                 "Normalized Data"                                              
+             ),
+             tabPanel(
+                 "Raw Data"
              ),
             tabPanel(
                  "Prediction"                                 

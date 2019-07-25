@@ -140,18 +140,8 @@ server = function(input, output) {
                 
                 
             )          
-
-            # Render summary text
-            # output$summaryText = renderText(
-                # paste("hello ",summaryText,"<br>")
-                # paste(typeof(input$shownCol))
-                # paste(input$shownCol,input$keyCol)
-                
-                # summaryText
-                # paste("Graph columns",input$shownCol)
-                # paste(input$shownCol)
-            # )
-
+            
+            
             # Render the graph
             output$myGraph = renderPlot(
                 {
@@ -323,7 +313,7 @@ server = function(input, output) {
                     )
 
                 },
-                "Data Set" = {
+                "Normalized Data" = {
                     div(                        
                         fluidRow(
                         column(
@@ -333,6 +323,19 @@ server = function(input, output) {
                         )
                         )
                     )
+                },
+                "Raw Data" = {
+
+                    div(                        
+                        fluidRow(
+                        column(
+                            width=12,
+                            dataTableOutput("dataTableRaw"),
+                            class="dataTableGroup"
+                        )
+                        )
+                    )
+                    
                 },
                 "Prediction"={
                     div(
@@ -401,6 +404,34 @@ server = function(input, output) {
             )
         }
     )
+
+        raw = data.frame(read.csv("rawData/concrete.csv"))
+        # print(raw)
+    output$dataTableRaw = DT::renderDataTable(
+        raw,
+        
+        class="table-sm table-condensed table-bordered customTable",
+        style = "bootstrap4",
+        options = list(
+            columnDefs = list(
+                list(title="Row",targets=0),
+                # list(targets=c(1:10),className=""),                        
+                list(title="Cement",targets=1),
+                list(title="Slag",targets=2),
+                list(title="Ash",targets=3),
+                list(title="Water",targets=4),
+                list(title="Super Plastic",targets=5),
+                list(title="Courseagg",targets=6),
+                list(title="Fineagg",targets=7),
+                list(title="Age",targets=8),
+                list(title="Strength",targets=9)                        
+                
+            )
+                                                    
+        )            
+        
+        
+    ) 
 
                 
 
